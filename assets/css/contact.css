@@ -1,0 +1,177 @@
+.contact {
+    margin: 60px 0;
+}
+
+.contact .main_box {
+    box-shadow: 0 0 6px var(--middle-gray);
+    border-radius: 20px;
+    width: 100%;
+    padding: 20px;
+}
+
+.contact .main_box .left_content {
+    position: relative;
+    border-radius: 12px;
+    background-color: var(--main);
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 35px;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.contact .main_box .left_content::after {
+    content: '';
+    position: absolute;
+    top: -50px;
+    left: -130px;
+    width: 400px;
+    height: 150px;
+    border-radius: 20% 20%/ 50% 50%;
+    background: var(--light-purple);
+    z-index: -1;
+    transform: rotate(45deg);
+}
+
+.contact .main_box .left_content::before {
+    content: '';
+    position: absolute;
+    bottom: -90px;
+    right: 20px;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    background: var(--light-purple);
+    z-index: -1;
+    opacity: 0.8;
+}
+
+.contact .main_box .left_content .content_heading {
+    color: var(--white);
+}
+
+.contact .main_box .left_content .content_heading h3 {
+    text-align: left;
+}
+
+.contact .main_box .left_content .content_heading p {
+    text-align: left;
+    margin: 0;
+    line-height: 20px;
+    font-size: 14px;
+}
+
+.contact .main_box .left_content .info .info_icon {
+    color: var(--white);
+    margin-right: 14px;
+    font-size: 20px;
+}
+
+.contact .main_box .left_content .info p {
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    margin: 30px 0;
+    font-size: 14px;
+}
+
+.contact .main_box .left_content .social_midea {
+    display: flex;
+}
+
+.contact .main_box .left_content .social_midea>div {
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: .2s ease-in-out;
+}
+
+.contact .main_box .left_content .social_midea>div:hover {
+    background-color: var(--light-purple);
+}
+
+.contact .main_box .left_content .social_midea>div .social_icon {
+    height: 20px;
+    width: 20px;
+    color: var(--white);
+}
+
+.contact .main_box .left_content .social_midea>div:hover .social_icon {
+    color: var(--main);
+}
+
+.contact .main_box .right_content {
+    padding: 20px 0px;
+    margin-right: 10px;
+}
+
+.contact .main_box .right_content .col-lg-6,
+.contact .main_box .right_content .col-lg-12 {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+}
+
+.contact .main_box .right_content .col-lg-6 label {
+    color: var(--dark);
+    font-size: 14px;
+    font-weight: 700;
+    transition: .2s ease-in-out;
+}
+.contact .main_box .right_content .col-lg-6:hover label {
+    color: var(--main);
+}
+
+.contact .main_box .right_content .col-lg-6 input {
+    border: none;
+    outline: none;
+    border-bottom: 1px solid var(--gray);
+    line-height: 17px;
+    padding-bottom: 14px;
+    transition: .2s ease-in-out;
+}
+
+.contact .main_box .right_content .col-lg-6:hover input {
+    color: var(--dark);
+    border-bottom-color: var(--main);
+}
+
+.contact .main_box .right_content .col-lg-12 label {
+    color: var(--dark);
+    font-size: 14px;
+    font-weight: 700;
+    transition: .2s ease-in-out;
+}
+
+.contact .main_box .right_content .col-lg-12:hover label {
+    color: var(--main);
+}
+
+.contact .main_box .right_content .col-lg-12 textarea {
+    border: none;
+    outline: none;
+    border-bottom: 1px solid var(--gray);
+    line-height: 17px;
+    padding-bottom: 10px;
+    resize: none;
+    transition: .2s ease-in-out;
+}
+
+.contact .main_box .right_content .col-lg-12:hover textarea {
+    color: var(--dark);
+    border-bottom-color: var(--main);
+}
+
+.contact .main_box .right_content .send_button {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}

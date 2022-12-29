@@ -1,0 +1,178 @@
+nav {
+    position: fixed !important;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: var(--white);
+    border-bottom: 1px solid var(--middle-gray);
+    padding: 0;
+    height: 65px;
+    z-index: 1000;
+    box-shadow: 0px 5px 10px -8px var(--gray);
+}
+nav .main_navbar{
+    display: block;
+}
+nav .side_navbar{
+    display: none;
+}
+nav .container a{
+    color: var(--main) !important;
+}
+nav .container .collapse ul li{
+    position: relative;
+    margin: 0px 8px;
+    font-size: 16px;
+    font-weight: 500;
+    transition: .5s ease-in-out;
+    cursor: pointer;
+}
+nav .container .collapse ul li::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: var(--main);
+    height: 4px;
+    border-radius: 15px 15px 0 0;
+    transition: .2s ease;
+    width: 0%;
+}
+nav .container .collapse ul li:hover::after{
+    width: 100%;
+}
+nav .container .collapse ul li a{
+    color: var(--gray) !important;
+    padding: 21px 0px;
+    transition: .2s ease-in-out;
+}
+nav .container .collapse ul li:hover a{
+    color: var(--main) !important;
+}
+nav .button{
+    display: flex;
+    align-items: center;
+}
+nav .button > button:nth-child(1){
+    position: relative;
+    border: none;
+    background-color: transparent;
+    font-size: 24px;
+    color: var(--gray);
+    margin-right: 25px;
+    transition: .3s ease-in-out;
+}
+nav .button > button:nth-child(1):hover{
+    color: var(--main);
+}
+nav .button > button:nth-child(1) span{
+    position: absolute;
+    bottom: 1px;
+    right: -1px;
+    font-size: 9px;
+    font-weight: 600;
+    width: 12px;
+    height: 12px;
+    color: white;
+    background-color: red;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 0px;
+}
+nav .button .profile{
+    width: 34px;
+    height: 34px;
+    border: 2px solid var(--middle-gray);
+    border-radius: 50%;
+    margin-left: 20px;
+    cursor: pointer;
+}
+nav .button .profile img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+
+nav .side_navbar{
+    display: none !important;
+    justify-content: center;
+    align-items: center;
+}
+nav .side_navbar .collapse{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    bottom: 0;
+    /* background-color: var(--white); */
+    background-color: rgba(255, 255, 255, 0.952);
+    transition: .3s ease-out;
+}
+.active_sidebar{
+    right: 0 !important;
+    box-shadow: -5px 0px 10px -8px var(--gray);
+}
+nav .side_navbar .collapse .button{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 1px solid var(--middle-gray);
+    padding: 15px 0;
+}
+nav .side_navbar .collapse .navbar-nav{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+nav .side_navbar .collapse .navbar-nav li{
+    width: 100%;
+    text-align: center;
+    transition: .3s ease-out;
+}
+nav .side_navbar .collapse .navbar-nav li:hover{
+    background-color: var(--light-purple);
+}
+nav .side_navbar > button{
+    position: relative;
+    border: none;
+    background-color: transparent;
+    font-size: 24px;
+    color: var(--gray);
+    margin-right: 25px;
+    transition: .3s ease-in-out;
+}
+nav .side_navbar > button:hover{
+    color: var(--main);
+}
+nav .side_navbar > button span{
+    position: absolute;
+    bottom: 1px;
+    right: -1px;
+    font-size: 9px;
+    font-weight: 600;
+    width: 12px;
+    height: 12px;
+    color: white;
+    background-color: red;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 0px;
+}
+
+@media (max-width: 992px) {
+    nav .main_navbar{
+        display: none !important;
+    }
+    nav .side_navbar{
+        display: flex !important;
+    }
+}

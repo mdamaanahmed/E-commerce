@@ -1,0 +1,124 @@
+.login-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.login-container .login {
+    position: relative;
+    margin: 60px 100px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 20px var(--middle-gray);
+}
+
+.login .col-lg-6:nth-child(1) {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.login .col-lg-6:nth-child(1)::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    display: flex;
+    align-items: center;
+    width: 1px;
+    height: 410px;
+    background-color: var(--middle-gray);
+}
+
+.login .col-lg-6:nth-child(1) h3 {
+    color: var(--dark);
+    font-weight: 600;
+}
+
+.login .col-lg-6:nth-child(1) .login_fields>div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.login .col-lg-6:nth-child(1) .login_fields>div label {
+    font-weight: 600;
+    font-size: .90rem;
+    margin-bottom: 4px;
+    padding: 0 8px;
+    transition: .2s ease-in-out;
+}
+
+.login .col-lg-6:nth-child(1) .login_fields>div:focus-within label,
+.login .col-lg-6:nth-child(1) .login_fields>div:hover label {
+    color: var(--second);
+}
+
+.login .col-lg-6:nth-child(1) .login_fields>div input {
+    width: 300px;
+    color: var(--dark);
+    outline: none;
+    padding: 6px 5px;
+    border-radius: 8px;
+    border: 1px solid var(--dark);
+    margin-bottom: 30px;
+    transition: .2s ease-in-out;
+}
+
+.login .col-lg-6:nth-child(1) .login_fields>div:focus-within input,
+.login .col-lg-6:nth-child(1) .login_fields>div:hover input {
+    border-color: var(--second);
+}
+
+.login .col-lg-6:nth-child(1) .login_fields>div button {
+    align-self: center;
+}
+
+.login .col-lg-6:nth-child(1) .login_fields>div a {
+    align-self: center;
+    font-size: 14px;
+    margin-top: 30px;
+}
+
+
+@media (max-width: 992px) {
+    .login-container .login {
+        margin: 0 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .login-container .login {
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+    .login .col-lg-6:nth-child(1) h3{
+        margin-bottom: 20px;
+    }
+    .login .col-lg-6:nth-child(1) .login_fields>div input {
+        margin-bottom: 10px;
+    }
+
+    .login .col-lg-6:nth-child(2) .img {
+        width: 50%;
+        margin: 0 auto;
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width: 576px){
+    .login-container .login {
+        margin: 0px 5px;
+    }
+    .login .col-lg-6:nth-child(1) .login_fields>div input{
+        width: 100%;
+    }
+    .login .col-lg-6:nth-child(2) .img {
+        width: 80%;
+    }
+}

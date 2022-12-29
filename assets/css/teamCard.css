@@ -1,0 +1,75 @@
+.team {
+    position: relative;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    margin: 0 20px;
+    cursor: pointer;
+    overflow: hidden;
+    transition: .2s ease-in-out;
+    box-shadow: 0px 1px 21px -15px var(--gray), 0px 50px 45px -40px var(--gray);
+    background-color: rgb(234, 248, 255);
+}
+.team .img{
+    width: 120px;
+    height: 120px;
+    margin: 20px 0;
+}
+.team .img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.team .content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.team .content h5{
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin-top: 10px;
+}
+.team .content p{
+    color: var(--gray);
+}
+.team .content .social_midea {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 100%;
+    height: 100%;
+    /* background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0)70%,rgba(0, 0, 0, 0.514) 100%); */
+    position: absolute;
+    top: 100%;
+    transition: .3s ease-in-out;
+}
+.team:hover .content .social_midea{
+    top: 0;
+}
+.team .content .social_midea>div {
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid var(--light-orange);
+    border-radius: 50%;
+    margin: 20px 8px;
+    cursor: pointer;
+    transition: .2s ease-in-out;
+}
+
+.team .content  .social_midea>div:hover {
+    background-color: var(--light-orange);
+}
+
+.team .content  .social_midea>div .social_icon {
+    height: 20px;
+    width: 20px;
+    color: var(--second);
+}

@@ -1,0 +1,179 @@
+.cart .modal .modal-content .modal-body .content{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 12px 10px;
+    border-top: 1px solid var(--middle-gray);
+}
+.cart .modal .modal-content .modal-body .content .image{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+.cart .modal .modal-content .modal-body .content .image img{
+    height: 130px;
+    width: 120px;
+    border-radius: 10px;
+}
+.cart .modal .modal-content .modal-body .content .image .title{
+    padding: 4px 10px;
+}
+.cart .modal .modal-content .modal-body .content .image .title > h5{
+    color: var(--dark);
+    margin-bottom: 0px;
+}
+.cart .modal .modal-content .modal-body .content .image .title > p:nth-child(2){
+    color: var(--gray);
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+.cart .modal .modal-content .modal-body .content .image .title > p:nth-child(3){
+    color: var(--main);
+    font-weight: 500;
+}
+.cart .modal .modal-content .modal-body .content .image .title > div{
+    display: flex;
+    align-items: flex-end;
+}
+.cart .modal .modal-content .modal-body .content .image .title > div h4{
+    color: var(--dark);
+    font-weight: 600;
+    margin-right: 15px;
+    margin-bottom: 0;
+}
+.cart .modal .modal-content .modal-body .content .image .title > div > p{
+    color: var(--second);
+    font-size: 14px;
+    margin-right: 15px;
+    margin-bottom: 4px;
+}
+.cart .content .qty{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 15px 0;
+}
+.cart .content .qty button {
+    width: 10px;
+    height: 10px;
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--main);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid var(--main);
+    border-radius: 5px;
+    background: var(--white);
+    padding: 10px 10px;
+    margin: 0;
+    line-height: 0px;
+    cursor: pointer;
+}
+.cart .content .qty h6{
+    height: 20px;
+    width: 20px;
+    color: var(--dark);
+    margin: 0 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cart .content .total{
+    text-align: right;
+}
+.cart .content .total div:nth-child(1) {
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--second);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: .2s ease-in-out;
+}
+.cart .content .total div:nth-child(1):hover {
+    background-color: var(--light-orange);
+}
+.cart .content .total div:nth-child(1) .delete_icon{
+    font-size: 20px;
+    color: var(--second);
+}
+.cart .content .total div:nth-child(2) p:nth-child(1){
+    color: var(--gray);
+    font-size: .90rem;
+    margin-bottom: 4px;
+    margin-left: 20px;
+}
+.cart .content .total div:nth-child(2) p:nth-child(2){
+    color: var(--gray);
+    font-weight: 500;
+    margin-bottom: 6px;
+}
+
+
+@media (max-width: 992px) {
+    .cart .modal .modal-content .modal-body .content .image img{
+        height: 110px;
+        width: 90px;
+    }
+    .cart .modal .modal-content .modal-body .content .image .title > h5{
+        font-size: 1.1rem;
+    }
+    .cart .modal .modal-content .modal-body .content .image .title > p:nth-child(3){
+        margin-bottom: 0;
+        font-size: .90rem;
+    }
+    .cart .modal .modal-content .modal-body .content .image .title > div h4{
+        font-size: 18px;
+    }
+    .cart .content .qty{
+        margin: 8px 0;
+    }
+    .cart .content .qty h6{
+        margin: 0 5px;
+    }
+}
+
+@media (max-width: 576px) {
+    .cart .modal .modal-content .modal-body {
+        padding: 0 0px !important;
+    }
+    .cart .modal .modal-content .modal-body .content .image img{
+        height: 110px;
+        width: 80px;
+    }
+    .cart .modal .modal-content .modal-body .content .image .title {
+        padding: 0px 5px;
+    }
+    .cart .modal .modal-content .modal-body .content .image .title > h5{
+        font-size: 1rem;
+    }
+    .cart .modal .modal-content .modal-body .content .image .title > p:nth-child(2){
+        font-size: .80rem;
+    }
+    .cart .modal .modal-content .modal-body .content .image .title > div > p{
+        margin-right: 0;
+        margin-bottom: 0;
+        font-size: .80rem;
+    }
+    .cart .modal .modal-content .modal-body .content .image .title > div h4{
+        font-size: 16px;
+    }
+    .cart .modal .modal-content .modal-body .content .image .title > p:nth-child(3){
+        margin-bottom: 0;
+        font-size: .80rem;
+    }
+    .cart .content .qty h6{
+        margin: 0;
+    }
+    .cart .content .total div:nth-child(2) p:nth-child(1){
+        margin-left: 0;
+        font-size: .80rem;
+    }
+}
